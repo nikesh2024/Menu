@@ -11,14 +11,12 @@ body{
     font-size: xx-large;
     color: black;
     font-family: 'Times New Roman', Times, serif;
-    
 }
 
 /*HEADER PART*/
 .first_header{ 
     color: #080808dc;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
 }
 
 /* TEXT- DECORATION */
@@ -27,17 +25,16 @@ a{
     display: block;
     
 }
-
-
+a:visited{
+    color: black;
+}
 /*FIRST PART*/
 li:nth-of-type(1){
-    color: black;
-    margin: 3rem 0rem 2rem 0rem;
+    color: rgb(0, 0, 0);
+    margin: 0rem 0rem 2rem 2rem;
     list-style-type: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    cursor: col-resize;
-    
-   
+    cursor: pointer;
 }
 
 /*SECOND PART*/
@@ -47,12 +44,11 @@ li:nth-of-type(2){
     color: black;
     list-style-type:none;
     text-align: center;
+    text-align: inherit;
     background-color: rgba(240, 54, 54, 0.89);
     margin: 0rem 0rem 0rem 32rem;
-    border-radius: 50% 50% 0% 0%;
-    cursor: grabbing;
-   
-    
+    border-radius: 15rem 15rem 0 0;
+    min-height: 5rem;
 }
 
 /*SECOND PART ACTIVE, HOVER & VISITED */
@@ -61,12 +57,12 @@ li:nth-of-type(2):active{
     color: aliceblue;
 }
 
-li:nth-of-type(2):hover{
+li:nth-of-type(2) a:hover{
     background-color:rgba(243, 40, 108, 0.952);
     color: rgb(236, 5, 5);
 }
 
-li:nth-of-type(2):visited{
+li:nth-of-type(2) a:visited{
     color: chartreuse;
 
 }
@@ -81,7 +77,7 @@ li:nth-of-type(3){
     background-color: rgba(38, 170, 38, 0.575);
     margin: 0rem 0rem 0rem 32rem;
     font-size: xx-large;
-    cursor: copy;
+    min-height: 5rem;
 }
 
 /*SECOND ACTIVE, HOVER & VISITED */
@@ -89,11 +85,11 @@ li:nth-of-type(3):active{
     background-color: red;
 }
 
-li:nth-of-type(3):hover{
+li:nth-of-type(3) a:hover{
     background-color: yellow;
 }
 
-li:nth-of-type(3):visited{
+li:nth-of-type(3) a:visited{
     color: antiquewhite;
 }
 
@@ -105,19 +101,19 @@ li:nth-of-type(4){
     text-align: center;
     background-color: rgba(45, 45, 245, 0.822);
     margin: 0rem 0rem 0rem 32rem;
-    cursor: crosshair;
+    min-height: 5rem;
 }
 
 /* THIRD PART ACTIVE, HOVER & VISITED */
-li:nth-of-type(4):active{
-    background-color: cyan;
+li:nth-of-type(4) a:active{
+    color: cyan;
 }
 
-li:nth-of-type(4):hover{
+li:nth-of-type(4) a:hover{
     background-color: rgba(128, 255, 0, 0.952);
 }
 
-li:nth-of-type(4):visited{
+li:nth-of-type(4) a:visited{
     color: rgba(127, 255, 212, 0.959);
 }
 
@@ -130,20 +126,21 @@ li:nth-of-type(5){
     background-color: rgba(116, 33, 33, 0.747);
     margin: 0rem 0rem 0rem 32rem;
     font-size: xx-large;
-    border-radius: 0% 0% 90% 90%;
+    border-radius: 0% 0% 90rem 90rem;
     cursor:e-resize;
+    min-height: 5rem;
 }
 
 /* FOURTH PART ACTIVE, HOVER & VISITED */
-li:nth-of-type(5):active{
+li:nth-of-type(5) a:active{
     background-color: rgba(240, 255, 255, 0.938);
 }
 
-li:nth-of-type(5):hover{
+li:nth-of-type(5) a:hover{
     background-color: rgba(179, 243, 4, 0.959);
 }
 
-li:nth-of-type(5):visited{
+li:nth-of-type(5) a:visited{
     color: rgba(219, 56, 50, 0.938);
 }
 
@@ -155,4 +152,5 @@ li:nth-of-type(5):visited{
     color: rgba(0, 0, 0,);
     text-align: center;
     font-weight: 900;
+    min-height: 5rem;
 }
